@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .largeNav {
+    @apply hidden lg:flex items-center font-semibold gap-6;
+  }
+  .mobile-nav {
+    @apply flex lg:hidden absolute flex-col gap-4 font-semibold top-[60px] items-center rounded-md   px-2 py-4 w-[90%] backdrop-blur-md left-1/2 -translate-x-1/2;
+  }
+}
